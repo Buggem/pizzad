@@ -1,0 +1,14 @@
+[Unit]
+Description=Pizza Delivery Daemon
+Wants=systemd-udev-settle.service
+After=systemd-udev-settle.service
+
+[Service]
+ExecStart=/bin/pizzad
+Group=input
+PrivateDevices=no
+
+DynamicUser=no
+
+[Install]
+WantedBy=multi-user.target
