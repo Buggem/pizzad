@@ -22,6 +22,10 @@ I mean, they're pretty simple... aren't they?
 `./build.sh` to build, `./install.sh` to install, and `./uninstall.sh` to uninstall.
 It couldn't be simpler!
 
+Make sure to create `/etc/pizzad.conf` with the contents of the path to your `/dev/input/eventX`.
+It is important for security to ensure that `root` is the only user that can modify `/etc/pizzad.conf` for safety.
+
+
 Oh yeah, you'll have to have SystemD and it's dev headers installed. 
 
 But since you are already running SystemD, (guess how I know) you should be fine.
